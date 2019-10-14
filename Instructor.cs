@@ -1,6 +1,6 @@
 namespace StudentExercises
 {
-    class Instructor
+    class Instructor : NSSPerson
     {
         public Instructor(string firstName, string lastName, string specialty, string slackHandle)
         {
@@ -10,9 +10,7 @@ namespace StudentExercises
             SlackHandle = slackHandle;
         }
 
-        public string FirstName {get; set;}
-        public string LastName {get; set;}
-        public string SlackHandle {get; set;}
+        
         public string Specialty {get; set;}
 
         public Cohort Cohort {get; set;}

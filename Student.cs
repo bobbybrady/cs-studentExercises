@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace StudentExercises
 {
-    class Student
+    class Student : NSSPerson
     {
         public Student(string firstName, string lastName, string slackHandle)
         {
@@ -11,9 +11,6 @@ namespace StudentExercises
             SlackHandle = slackHandle;
         }
 
-        public string FirstName {get; set;}
-        public string LastName {get; set;}
-        public string SlackHandle {get; set;}
 
         public Cohort Cohort {get; set;}
 
